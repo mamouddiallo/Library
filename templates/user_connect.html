@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="../static/css/connecte.css">
+    <script src="../static/js/main.js" defer></script>
+</head>
+<body>
+   
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">English/Library</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+					{% if 'username' in session%}
+					<h6 class="title">
+						Welcome, {{ session['username'] }}! 
+                        <button style="width: 70px; height: 25px; border-radius: 10px; background-color:#105652; color:white;"><a href="/logout" style="text-decoration: none; color: white;">Logout</a></button>
+					  </h6>
+					  {% endif %}
+                </li>
+
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="fondu">
+        
+
+    </section>
+    <section class="Categories">
+        <div class="texte">
+            <h1>OUR CATEGORIES</h1>
+        </div>
+        <div class="disigne">
+            <div class="carr1"></div>
+            <div class="carr2">
+                <h1>Beginner level</h1>
+            </div>
+            <div class="carr3"></div>
+        </div>
+        <div>
+
+        </div>
+
+        <section class="books">
+            <div class="book1">
+                <div class="image">
+
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+            <div class="book2">
+                <div class="image2">
+
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+            <div class="book3">
+                <div class="image3">
+
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="books">
+            <div class="book1">
+                <div class="image">
+
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+            <div class="book2">
+                <div class="image2">
+
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+            <div class="book3">
+                <div class="image3">
+
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="disigne">
+        <div class="carr1"></div>
+        <div class="carr2">
+            <h1>Intermediate level</h1>
+        </div>
+        <div class="carr3"></div>
+    </div>
+
+    <section class="deuxieme">
+        <section class="books">
+            <div class="book1">
+                <div class="image">
+    
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+            <div class="book2">
+                <div class="image2">
+    
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+            <div class="book3">
+                <div class="image3">
+    
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="books">
+            <div class="book1">
+                <div class="image">
+    
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+            <div class="book2">
+                <div class="image2">
+    
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+            <div class="book3">
+                <div class="image3">
+    
+                </div>
+                <div class="prix">
+                    <div class="text">
+                        <h1>Price  $11.05</h1>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn1"><button>details</button></div>
+                    <div class="btn2"><button>Add to carts</button></div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <div class="disigne">
+        <div class="carr1"></div>
+        <div class="carr2">
+            <h1>Expert level</h1>
+        </div>
+        <div class="carr3"></div>
+    </div>
+    <div>
+
+        <section class="troisieme">
+            <section class="books">
+                <div class="book1">
+                    <div class="image">
+        
+                    </div>
+                    <div class="prix">
+                        <div class="text">
+                            <h1>Price  $11.05</h1>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="btn1"><button>details</button></div>
+                        <div class="btn2"><button>Add to carts</button></div>
+                    </div>
+                </div>
+                <div class="book2">
+                    <div class="image2">
+        
+                    </div>
+                    <div class="prix">
+                        <div class="text">
+                            <h1>Price  $11.05</h1>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="btn1"><button>details</button></div>
+                        <div class="btn2"><button>Add to carts</button></div>
+                    </div>
+                </div>
+                <div class="book3">
+                    <div class="image3">
+        
+                    </div>
+                    <div class="prix">
+                        <div class="text">
+                            <h1>Price  $11.05</h1>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="btn1"><button>details</button></div>
+                        <div class="btn2"><button>Add to carts</button></div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="books">
+                <div class="book1">
+                    <div class="image">
+        
+                    </div>
+                    <div class="prix">
+                        <div class="text">
+                            <h1>Price  $11.05</h1>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="btn1"><button>details</button></div>
+                        <div class="btn2"><button>Add to carts</button></div>
+                    </div>
+                </div>
+                <div class="book2">
+                    <div class="image2">
+        
+                    </div>
+                    <div class="prix">
+                        <div class="text">
+                            <h1>Price  $11.05</h1>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="btn1"><button>details</button></div>
+                        <div class="btn2"><button>Add to carts</button></div>
+                    </div>
+                </div>
+                <div class="book3">
+                    <div class="image3">
+        
+                    </div>
+                    <div class="prix">
+                        <div class="text">
+                            <h1>Price  $11.05</h1>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="btn1"><button>details</button></div>
+                        <div class="btn2"><button>Add to carts</button></div>
+                    </div>
+                </div>
+            </section>
+            <section class="espace">
+
+            </section>
+            <section class="education">
+                <div class="learning">
+                    <h1>Education and Learning</h1>
+                    <p>Learning is something we do almost every day</p>
+                </div>
+            </section>
+            <section class="all">
+                <div class="students">
+                    <div class="num1">
+                        <div class="cercle">
+                            <h1>01</h1>
+                        </div>
+                    </div>
+                    <div class="text1">
+                        <h1>students</h1>
+                    </div>
+                    <div class="text2">
+                        <p>We support you with books that match your profile and your challenges</p>
+                    </div>
+                </div>
+                <div class="profestionals">
+                    <div class="num1">
+                        <div class="cercle">
+                            <h1>02</h1>
+                        </div>
+                    </div>
+                    <div class="text1">
+                        <h1>profestionals</h1>
+                    </div>
+                    <div class="text2">
+                        <p>We support you with books that match your profile and your challenges</p>
+                    </div>
+                </div>
+                <div class="particulars">
+                    <div class="num1">
+                        <div class="cercle">
+                            <h1>03</h1>
+                        </div>
+                    </div>
+                    <div class="text1">
+                        <h1>particulars</h1>
+                    </div>
+                    <div class="text2">
+                        <p>We support you with books that match your profile and your challenges</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer">
+
+                <div class="photo_form">
+                    <div class="picture">
+                            <p></p>
+                    </div>
+                    <div class="picture1">
+                        <p></p>
+                </div>
+                    <div class="formulaire">
+                        <div class="contact">
+                            <h1>Contact</h1>
+                        </div>
+                        <input class="form1" type="text" placeholder="Enter your Name">
+                        <p></p>
+                        <input class="form1" type="text" placeholder="Enter your email Adress">
+                        <p></p>
+                        <input class="form1" type="text" placeholder="Enter your message">
+                        <div class="form1">
+                            <button>SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot_small">
+                    <div class="foot1">
+                        <div class="fo1"><p><img src="../static/images/appel.png"></p></div>
+                        <div class="fo1"><h1>CALL US</h1></div>
+                        <div class="fo1"><p><img src="../static/images/localisateur.png"></p></div>
+                        <div class="fo1"><h1>English/Library</h1></div>
+                        <div class="fo1"><p><img src="../static/images/lhorloge.png"></p></div>
+                    </div>
+                    <div class="foot11">
+                        <div class="fo11"><p>+225 07 58 50 48 22</p></div>
+                        <div class="fo11"><h1></h1></div>
+                        <div class="fo11"><h1>Angre, carrefour Gestoci <br> NaN Digital Academy</h1></div>
+                        <div class="fo11"><h1>An English library that offers books <br>for varying skill levels, from beginners to experts</h1></div>
+                        <div class="fo11"><p>7j/7 24h/24h</p></div>
+                    </div>
+                    <div class="foot12">
+                        <div class="foot121">
+                            <div class="fo11"><p><img src="../static/images/whatsapp.png"></p></div>
+                            <div class="fo11"><h1><img src="../static/images/whatsapp.png"></h1></div>
+                            <div class="fo11"><p><img src="../static/images/facebook.png"></p></div>
+                        </div>
+                        <div class="copyright"><h1> copyright © 2023 Mamoudou Diallo </h1> </div>
+                    </div>
+                
+                </div>
+            </section>
+
+
+          
+
+    
+</body>
+</html>

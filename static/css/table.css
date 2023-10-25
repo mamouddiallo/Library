@@ -1,0 +1,26 @@
+body{
+    background-color: #105652;
+}
+table{
+    margin: 0 auto;
+    background-color: rgb(218, 218, 218);
+    box-shadow: 1px 1px 8px 1px rgb(72, 76, 83);
+    width: 80%;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.one{
+    background-color: red;
+    color: white;
+}
+.three{
+    background-color: green;
+    color: white;
+}
+.two{
+    background-color:yellow;
+    color: white;
+}

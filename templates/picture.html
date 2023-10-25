@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajouter un produit</title>
+</head>
+<body style="text-align: center;">
+    <h1>ADD PRODUCT</h1>
+    
+    <form action="/addstore" enctype="multipart/form-data" method="POST"> 
+
+        <label for="name">Nom du produit:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label for="price">Prix:</label>
+        <input type="number" name="prix" required><br><br>
+
+<!-- 
+        <label for="category">Catégorie:</label>
+        <select name="category">
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Expert">Expert</option>
+        </select><br><br> -->
+        <input type = "submit">
+        <!-- <input type="file" name="pic"/>
+        <input type="submit" value="Upload a file"/> -->
+     </form>
+</body>
+</html>

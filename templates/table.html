@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dataliste</title>
+    <link rel="stylesheet" href=" {{url_for('static', filename='css/table.css')}}">
+</head>
+<body>
+  <div class="users">
+    <h1>the users </h1>
+  </div>
+  <table border="1">
+    
+    <thead>
+        <th>id</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Action</th>
+        <th>Action</th>
+        <th>Action</th>
+    </thead>
+    {% for data in liste_data  %}
+    <tbody>
+        <td>{{data.id}}</td><br>
+        <td>{{data.name}}</td> 
+        <td>{{data.username}}</td> 
+        <td>{{data.email}}</td> 
+        <td class="one"><a  href="{{url_for('delete',id=data.id)}}">Delete</a></td>
+        <td class="two"><a href="{{url_for('update',id=data.id)}}">Updata</a></td>
+        <td class="three"><a  class="three" href="{{url_for('register')}}">Add</a></td>
+    </tbody>
+    {% endfor %}
+  </table>
+</body>
+</html>

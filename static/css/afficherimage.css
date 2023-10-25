@@ -1,0 +1,100 @@
+.books{
+    margin-top: 20px;
+    width: 80%;
+    height: 370px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.book1{
+    width: 25%;
+    height: 300px;
+    background-color: white;
+}
+.image{
+    width: 100%;
+    height: 250px;
+    background: url("../images/beginers.jpg") no-repeat;
+    background-size: cover;
+}
+.prix{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+.button{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+.btn1 button{
+    width: 150%;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #105652;
+    color: white;
+    border: 2px solid #105652;
+    border-radius: 5px;
+}
+.btn1 button:hover{
+    background-color: black;
+    
+}
+.btn2 button:hover{
+    background-color: black;
+    
+}
+.btn2 button{
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #105652;
+    color: white;
+    border: 2px solid #105652;
+    border-radius: 5px;
+}
+.text{
+    width: 100%;
+    height: 50px;
+    background-color:white;
+    margin: auto;
+    margin-top: 20px;
+   
+}
+
+.prix h1{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+.book2{
+    width: 25%;
+    height: 300px;
+    background-color: white;
+}
+.book1:hover{
+    transform: scale(1.1);
+}
+.book2:hover{
+    transform: scale(1.1);
+    box-shadow: #0E8388;
+}
+
+.book3:hover{
+    transform: scale(1.1);
+}
+
+
+.book3{
+    width: 25%;
+    height: 300px;
+    background-color: white;
+
+}
