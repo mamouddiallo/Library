@@ -34,7 +34,12 @@ a {
   margin: auto;
   background-color: #105652;
 }
-
+.buttons{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -10px;
+}
 .hamburger {
   display: none;
 }
@@ -99,7 +104,7 @@ a {
         background-image: url("../images/study-group-african-people_23-2149156414.jpg");
     }
     60%{
-        background-image: url("../images/doctor-explaining-results-patient_166258-201.jpg");
+        background-image: url("../images/etudiants-bibliotheque.jpg");
     }
     100%{
         background-image: url("../images/study-group-learning-library.jpg");
