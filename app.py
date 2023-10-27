@@ -3,14 +3,18 @@ from flask import Flask, Response, flash, make_response, render_template, reques
 from flask_login import login_user, logout_user
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user
-from flask_migrate import Migrate
+#from flask_migrate import Migrate
 
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.sqlite"
 app.config["SECRET_KEY"] = "mamoud"
 db = SQLAlchemy()
-migrate = Migrate(app, db)
+with app.app_context() :
+    try :
+        db.create_all()
+    except Exception as e:
+        print("error de creation de la table")
 
 
 class User(db.Model,UserMixin):
@@ -43,6 +47,15 @@ class Img(db.Model):
     #img = db.Column(db.Text, unique=True, nullable=False)
     name = db.Column(db.Text, nullable=False)
     #mimetype = db.Column(db.Text, nullable=False)
+
+
+class imm(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255), nullable=False)
+    prix= db.Column(db.Integer, nullable=False)
+    def __init__(self, name, prix):
+        self.name = name
+        self.prix = prix
 
     
         
@@ -219,13 +232,6 @@ def add_product():
         return redirect(url_for('afficherimage'))
     return render_template('picture.html')
 
-class imm(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(255), nullable=False)
-    prix= db.Column(db.Integer, nullable=False)
-    def __init__(self, name, prix):
-        self.name = name
-        self.prix = prix
 # @app.route("/images")
 # def images():
 #     ajout = imm.query.all()
